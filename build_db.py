@@ -11,7 +11,7 @@ LOCATIONS=[
 
 DATA_DIR=pathlib.Path("data")
 
-def build():
+def build_error():
     conn=sqlite3.connect("project.db")
 
     conn.execute("DROP TABLE IF EXISTS locations")
